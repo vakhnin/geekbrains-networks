@@ -1,0 +1,24 @@
+1. Проверяем у PC 192.168.1.2 (Desktop->IP config): IPv4 Address, Subnet Mask, Default Gateway. Соединяем прямым кабелем с Hub0
+
+2. Проверяем у PC 192.168.1.3 (Desktop->IP config): IPv4 Address, Subnet Mask, Default Gateway. Исправляем ошибку: IPv4 Address -192.168.1.3 Исправляем ошибку: переносим IP из DNS server в Default Gateway. Соединяем прямым кабелем с Hub0
+
+3. Проверяем у PC 192.168.1.4 (Desktop->IP config): IPv4 Address, Subnet Mask, Default Gateway. Соединяем прямым кабелем с Hub1
+
+4. Проверяем у PC 192.168.1.5 (Desktop->IP config): IPv4 Address, Subnet Mask, Default Gateway. Заполняем: IPv4 Address, Subnet Mask. Соединяем прямым кабелем с Hub1
+
+5. Удаляем прямой кабель между Hub0 и Hub1. Соединяем кросс кабелем.
+
+6. Router0 выставляем скорость Eth0 100 Mbps или Auto
+
+7. Кросс кабелем соединяем Router0 Eth1 с Router1 Eth1
+
+8. Проверяем у Server 10.0.0.2 (Desktop->IP config): IPv4 Address, Subnet Mask, Default Gateway. Соединяем прямым кабелем с Switch0
+
+9. Проверяем у Server 10.0.0.3 (Desktop->IP config): IPv4 Address, Subnet Mask, Default Gateway. Соединяем прямым кабелем с Switch0
+
+10. Проверяем у Server 10.0.0.4 (Desktop->IP config): IPv4 Address, Subnet Mask, Default Gateway. Исправляем ошибку: заполняем Default Gateway 10.0.0.1 Соединяем прямым кабелем с Switch0
+
+11. Соединяем прямым кабелем Switch0 с Router1 Eth0
+
+Проверяем:
+Пингуем со всех компьютеров сети 192.168.1.0 все компьютеры сети 10.0.0.0 и наоборот.
