@@ -1,0 +1,18 @@
+1. Проверяем у PC0 (Config) что выставлен DHCP и автоматически назначен  Default Gateway. Проверяем что IPv4 Address, Subnet Mask автоматически назначены (Desktop->IP config).
+
+2. Проверяем у PC1 (Config) что выставлен DHCP и автоматически назначен  Default Gateway. Проверяем что IPv4 Address, Subnet Mask автоматически назначены (Desktop->IP config).
+
+3. Переставляем кросс кабель от Hub0 до Router0 (в подсети 192.168.1.0) в порт Eth0. 
+
+4. Проверяем у Laptop1 (Config) что выставлен DHCP и автоматически назначен  Default Gateway. Проверяем что IPv4 Address, Subnet Mask автоматически назначены (Desktop->IP config).
+
+5. Включаем Laptop2. Выставляем DHCP (Config). Выставляем Half Duplex или, лучше Auto (Config -> INTERFACE -> FastEthernet0). Проверяем что IPv4 Address, Subnet Mask автоматически назначены (Desktop->IP config).
+
+6. Удаляем кросс кабель от Server0 до Hub2. Соединяем прямым кабелем Server0 и Hub2. Проверяем IPv4 Address, Subnet Mask, Default Gateway (Desktop->IP config).
+
+7. У Laptop0 выставляем 100 Mbps или, лучше, Auto (Config -> INTERFACE -> FastEthernet0). Проверяем IPv4 Address, Subnet Mask, Default Gateway (Desktop->IP config).
+
+8. Переставляем прямой кабель от Switch1 до Router0 (в подсети 10.0.0.0) в порт Internet.
+
+Проверяем:
+Пингуем со всех компьютеров сети 192.168.1.0 все компьютеры сети 10.0.0.0
