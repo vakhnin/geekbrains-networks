@@ -25,7 +25,7 @@ class EchoServer(asyncore.dispatcher):
         pair = self.accept()
         if pair is not None:
             sock, addr = pair
-            print('conn', addr)
+            print 'conn', addr
             handler = EchoHandler(sock)
 
 
